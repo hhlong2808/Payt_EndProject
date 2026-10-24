@@ -99,8 +99,8 @@ Chạy lần lượt các Jupyter Notebook theo đúng thứ tự pipeline sau:
 | **XGBoost (Baseline FE - 34 biến)** | — | MAE: 48.26 € \| RMSE: 66.90 € \| $R^2$: 0.7685 | Cải thiện nhảy vọt nhờ Target Encoding và đặc trưng tương tác |
 | **Random Forest (Sau lọc còn 28 biến)** | — | MAE: 50.31 € \| RMSE: 72.67 € \| $R^2$: 0.7268 | Lọc biến đóng góp < 0.5% giữ hiệu năng tương đương |
 | **XGBoost (Sau lọc còn 28 biến)** | — | MAE: 48.57 € \| RMSE: 67.57 € \| $R^2$: 0.7639 | Giảm nhẹ so với giữ đủ 34 biến $\rightarrow$ quyết định giữ trọn 34 biến |
-| **Random Forest (Đã Tuned - 34 biến)** | MAE: 22.47 € \| RMSE: 34.96 € \| $R^2$: 0.9348 | **MAE: 50.42 € \| RMSE: 72.86 € \| $R^2$: 0.7254** | `n_estimators=100, max_depth=15, min_samples_split=5` *(Test: MAE 48.40 € \| RMSE 69.42 € \| $R^2$ 0.7273)* |
-| **XGBoost (Đã Tuned - 34 biến)** | MAE: 18.69 € \| RMSE: 25.10 € \| $R^2$: 0.9664 | **MAE: 46.19 € \| RMSE: 64.78 € \| $R^2$: 0.7829** | `n_estimators=300, max_depth=5, lr=0.05, subsample=0.9` *(Test: MAE 46.45 € \| RMSE 66.81 € \| $R^2$ 0.7474)* |
+| **Random Forest (Đã Tuned - 34 biến)** | MAE: 22.47 € \| RMSE: 34.96 € \| $R^2$: 0.9348 | **MAE: 50.42 € \| RMSE: 72.86 € \| R²: 0.7254** | `n_estimators=100, max_depth=15, min_samples_split=5` *(Test: MAE 48.40 € \| RMSE 69.42 € \| $R^2$ 0.7273)* |
+| **XGBoost (Đã Tuned - 34 biến)** | MAE: 18.69 € \| RMSE: 25.10 € \| $R^2$: 0.9664 | **MAE: 46.19 € \| RMSE: 64.78 € \| R²: 0.7829** | `n_estimators=300, max_depth=5, lr=0.05, subsample=0.9` *(Test: MAE 46.45 € \| RMSE 66.81 € \| $R^2$ 0.7474)* |
 
 ---
 
